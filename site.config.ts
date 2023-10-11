@@ -10,7 +10,7 @@ export default siteConfig({
 
     // basic site info (required)
     name: 'Sionic AI Tech Blog',
-    domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+    domain: 'blog.sionic.ai',
     author: 'Sukhyun Ko',
 
     // open graph metadata (optional)
