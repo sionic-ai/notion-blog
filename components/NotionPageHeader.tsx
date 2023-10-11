@@ -10,6 +10,7 @@ import { isSearchEnabled, navigationLinks, navigationStyle } from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
+import Link from 'next/link'
 
 const ToggleThemeButton = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -45,7 +46,16 @@ export const NotionPageHeader: React.FC<{
   return (
     <header className='notion-header'>
       <div className='notion-nav-header'>
-        <Breadcrumbs block={block} rootOnly={true} />
+        {/* <Breadcrumbs block={block} rootOnly={false} /> */}
+        <div className='notion-nav-header-rhs breadcrumbs'>
+            <img src='/logo-512.png' alt='Logo' className={styles.logoImage} />
+            <Link
+                href='/'
+                className={cs(styles.navLink, 'breadcrumb', 'button')}
+            >
+                <h2 style={{cursor: 'pointer'}}>Sionic AI</h2>
+            </Link>
+        </div>
 
         <div className='notion-nav-header-rhs breadcrumbs'>
           {navigationLinks

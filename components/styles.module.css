@@ -38,6 +38,12 @@
   align-items: center;
 }
 
+
+.logoImage {
+  /* max-width: 100%; */
+  width: 32px;
+}
+  
 .errorImage {
   max-width: 100%;
   width: 640px;
