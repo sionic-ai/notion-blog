@@ -137,7 +137,7 @@
 }
 
 .notion-hr {
-  margin: 2em 0;
+  margin: 0.7em 0;
 }
 
 @media only screen and (max-width: 920px) {
@@ -340,10 +340,17 @@
 .dark-mode .notion-orange_background,
 .dark-mode .notion-brown_background,
 .dark-mode .notion-gray_background {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
   border-radius: 0;
-  background: none !important;
+  background: none !important; */
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #777777 10.5%,
+    #747474 85.29%,
+    var(--bg-color)
+  );
 }
 
 /* if you don't want rounded page icon images, remove this */
