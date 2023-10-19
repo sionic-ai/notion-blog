@@ -84,50 +84,33 @@ export default async function OGImage(req: NextRequest) {
           />
         )}
 
-        <div
-          style={{
-            position: 'relative',
-            width: 900,
-            height: 465,
+        <div style={{
+          position: 'relative',
+          width: 900,
+          height: 465,
+          display: 'flex',
+          flexDirection: 'column',
+          zIndex: '1'
+        }}>
+          <div style={{
+            width: '100%',
+            height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            border: '16px solid rgba(0,0,0,0.3)',
-            borderRadius: 8,
-            zIndex: '1'
-          }}
-        >
-          <div
-            style={{
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-around',
-              backgroundColor: '#fff',
-              padding: 24,
-              alignItems: 'center',
-              textAlign: 'center'
-            }}
-          >
-            {pageInfo.detail && (
-              <div style={{ fontSize: 32, opacity: 0 }}>{pageInfo.detail}</div>
-            )}
+            justifyContent: 'flex-start',
+            padding: 24,
+            alignItems: 'center',
+            textAlign: 'center'
+          }}>
+          <div style={{
+            fontSize: 70,
+            fontWeight: 700,
+            fontFamily: 'Inter',
+            textShadow: '0px 0px 20px rgba(255, 255, 255)',
+          }}>
+            {pageInfo.title}
+          </div>
 
-            <div
-              style={{
-                fontSize: 70,
-                fontWeight: 700,
-                fontFamily: 'Inter'
-              }}
-            >
-              {pageInfo.title}
-            </div>
-
-            {pageInfo.detail && (
-              <div style={{ fontSize: 32, opacity: 0.6 }}>
-                {pageInfo.detail}
-              </div>
-            )}
           </div>
         </div>
 

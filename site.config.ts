@@ -11,7 +11,7 @@ export default siteConfig({
     // basic site info (required)
     name: 'Sionic AI Blog',
     domain: 'blog.sionic.ai',
-    author: 'Sukhyun Ko',
+    author: 'Sionic AI',
 
     // open graph metadata (optional)
     description: 'Create your AI today: simply, quickly, and economically',
