@@ -9,7 +9,7 @@ export default siteConfig({
     rootNotionSpaceId: null,
 
     // basic site info (required)
-    name: 'Sionic AI Tech Blog',
+    name: 'Sionic AI Blog',
     domain: 'blog.sionic.ai',
     author: 'Sukhyun Ko',
 
@@ -43,7 +43,9 @@ export default siteConfig({
     // example:
     //
     pageUrlOverrides: {
-      '/about': 'f9603019252e489bb1228e4ef3ea876f',
+      '/member': '7c768cf6232642f0b16f011c3deafa16',
+      '/culture': 'c4f1ed7068394e70bda372ee9d50c267',
+      '/joinus': 'a2440456488c4ae5bd7cacd283532fba',
       '/articles': '4e12ecd4a88a4bd9ab811f470a4b1038',
     },
     // pageUrlOverrides: null,
@@ -54,8 +56,16 @@ export default siteConfig({
     navigationStyle: 'custom',
     navigationLinks: [
         {
-            title: 'About',
-            pageId: 'f9603019252e489bb1228e4ef3ea876f'
+            title: 'Member',
+            pageId: '7c768cf6232642f0b16f011c3deafa16'
+        },
+        {
+            title: 'Culture',
+            pageId: 'c4f1ed7068394e70bda372ee9d50c267'
+        },
+        {
+            title: 'Join us!',
+            pageId: 'a2440456488c4ae5bd7cacd283532fba'
         },
         {
             title: 'Articles',
