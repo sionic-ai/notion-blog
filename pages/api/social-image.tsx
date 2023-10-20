@@ -84,36 +84,6 @@ export default async function OGImage(req: NextRequest) {
           />
         )}
 
-        <div style={{
-          position: 'relative',
-          width: 900,
-          height: 465,
-          display: 'flex',
-          flexDirection: 'column',
-          zIndex: '1'
-        }}>
-          <div style={{
-            width: '100%',
-            height: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-start',
-            padding: 24,
-            alignItems: 'center',
-            textAlign: 'center'
-          }}>
-          <div style={{
-            fontSize: 70,
-            fontWeight: 700,
-            fontFamily: 'Inter',
-            textShadow: '0px 0px 20px rgba(255, 255, 255)',
-          }}>
-            {pageInfo.title}
-          </div>
-
-          </div>
-        </div>
-
         {pageInfo.authorImage && (
           <div
             style={{
